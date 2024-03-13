@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Input com Título</title>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .input-columns {
+    display: flex;
+    flex-direction: column; /* Coloca os filhos em coluna */
+    gap: 10px; /* Espaçamento entre os filhos */
+}
+
+.input-container,
+.input-containerr {
+    display: flex;
+    flex-direction: row; /* Muda para linha */
+    align-items: center;
+    justify-content: center;
+}
+
+.input-container label,
+.input-containerr label {
+    display: block;
+    font-weight: bold;
+    margin-right: 10px; /* Espaçamento entre o rótulo e a caixa de texto */
+}
+
+.input-container input{
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.input-containerr input {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+
+    .custom-button {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+
+    .custom-button:hover {
+        background-color: #45a049;
+    }
+
+    #forgot-password {
+      position: absolute;
+      top: 67.5%;
+      left: 57.5%;
+      transform: translate(-50%, -50%);
+      font-size: 16px;
+      color: #333;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    .button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza os botões horizontalmente */
+    justify-content: center; /* Centraliza os botões verticalmente */
+    position: absolute;
+    top: 67.5%;
+    left: 40.5%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 30px;
+    font-size: 20px;
+    margin: 5px;
+}
+
+.title {
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Centraliza os botões horizontalmente */
+      justify-content: center; /* Centraliza os botões verticalmente */
+      position: absolute;
+      top: 19%;
+      left: 34%;
+      transform: translate(-50%, -50%);
+    }
+    
+    .login-box { /* New class for the login box */
+    background-color: #f5f5f5; /* Light gray background */
+    border: 1px solid #ccc; /* Gray border */
+    padding: 100px; /* Padding inside the box */
+    border-radius: 10px; /* Rounded corners */
+    width: 400px; /* Set a width for the box */
+    margin: 0 auto; /* Center the box horizontally */
+  }
+    
+</style>
+</head>
+<body>
+    <div class="title">
+        <h1 style="color:blue;">Sign Up</h1>
+      </div>
+
+<!-- Caixa de login -->
+<div class="login-box">
+    <div class="input-columns">
+        <div class="input-container">
+            <label for="input1">Name</label>
+            <input type="text" id="input1">
+        </div>
+        <div class="input-containerr">
+            <label for="input2">Email</label>
+            <input type="text" id="input2">
+        </div>
+        <div class="input-container">
+            <label for="input1">Password</label>
+            <input type="text" id="input1">
+        </div>
+        <div class="input-containerr">
+            <label for="input2">Re-type Password</label>
+            <input type="text" id="input2">
+        </div>
+    </div>
+
+    <input type="button" class="button-container" value="Login" onclick="window.location.href='Login.html'">
+    <input type="button" class="custom-button" value="< Back" onclick="window.location.href='teste.html'">
+    <div id="forgot-password" onclick="window.location.href='forgot_password.html'">Forgot Password?</div>
+</div>
+
+
+
+</body>
+</html>
