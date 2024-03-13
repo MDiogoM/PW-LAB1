@@ -11,6 +11,8 @@
         align-items: center;
         height: 100vh;
         margin: 0;
+        background: gray;
+
     }
 
     .input-columns {
@@ -39,7 +41,7 @@
     padding: 8px;
     font-size: 16px;
     border-radius: 10px;
-    border: 1px solid #ccc;
+    border: 3px solid #ccc;
 }
 
 .input-containerr input {
@@ -47,7 +49,7 @@
     padding: 8px;
     font-size: 16px;
     border-radius: 10px;
-    border: 1px solid #ccc;
+    border: 3px solid #ccc;
 }
 
 
@@ -55,7 +57,7 @@
         position: absolute;
         top: 0;
         left: 0;
-        background-color: #4CAF50;
+        background-color: green;
         border: none;
         color: white;
         padding: 15px 32px;
@@ -73,13 +75,18 @@
 
     #forgot-password {
       position: absolute;
-      top: 67.5%;
+      top: 70%;
       left: 57.5%;
       transform: translate(-50%, -50%);
       font-size: 16px;
-      color: #333;
+      color: blue;
       text-decoration: underline;
       cursor: pointer;
+    }
+
+    #terms-of-use {
+      color: blue;
+      text-decoration: underline;
     }
 
     .button-container {
@@ -88,7 +95,7 @@
     align-items: center; /* Centraliza os botões horizontalmente */
     justify-content: center; /* Centraliza os botões verticalmente */
     position: absolute;
-    top: 67.5%;
+    top: 70%;
     left: 40.5%;
     transform: translate(-50%, -50%);
     width: 150px;
@@ -103,8 +110,8 @@
       align-items: center; /* Centraliza os botões horizontalmente */
       justify-content: center; /* Centraliza os botões verticalmente */
       position: absolute;
-      top: 19%;
-      left: 34%;
+      top: 15%;
+      left: 34.5%;
       transform: translate(-50%, -50%);
     }
     
@@ -116,12 +123,32 @@
     width: 400px; /* Set a width for the box */
     margin: 0 auto; /* Center the box horizontally */
   }
+
+  .line {
+        width: 100%;
+        height: 1px;
+        background-color: black;
+        position: absolute;
+        top: 95%;
+        left: 0;
+        transform: translateY(-50%);
+        cursor: pointer;
+    }
+
+    .texto {
+        display: flex;
+        align-items: center;
+    }
+
+    .texto input[type="checkbox"] {
+        margin-right: 10px;
+    }
     
 </style>
 </head>
 <body>
     <div class="title">
-        <h1 style="color:blue;">Sign Up</h1>
+        <h1 style="color:black;">Sign Up</h1>
       </div>
 
 <!-- Caixa de login -->
@@ -143,14 +170,24 @@
             <label for="input2">Re-type Password</label>
             <input type="text" id="input2">
         </div>
-    </div>
+        <div class="texto">
+            <input type="checkbox" name="meu_checkbox"> I agree to the&#160;
+            <a href="terms_of_use.html" id="terms-of-use">Terms of Use&#160;</a>
+            and&#160;
+            <a href="privacy_policy.html" id="terms-of-use">Privacy Policy</a>
+          </div>
+          
 
-    <input type="button" class="button-container" value="Login" onclick="window.location.href='Login.html'">
+    <input type="button" class="button-container" value="Register" >
     <input type="button" class="custom-button" value="< Back" onclick="window.location.href='teste.html'">
-    <div id="forgot-password" onclick="window.location.href='forgot_password.html'">Forgot Password?</div>
+    <div id="forgot-password" onclick="window.location.href='forgot_password.html'">Learn More?</div>
 </div>
 
+<div class="line">
 
+    <p>Copyright 2024 - All rights reserved by Diogo Machado.</p>
+  
+  </div>
 
 </body>
 </html>
